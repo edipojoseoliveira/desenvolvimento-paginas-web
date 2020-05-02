@@ -4,27 +4,18 @@ form {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-form li + li {
-    margin-top: 1em;
-}
-
 label {
     display: inline-block;
-    width: 25%;
-    text-align: right;
+    padding-bottom: 5px;
+    font-weight: bold;
 }
 
 input, textarea {
     font: 1em sans-serif;
-    width:70%;
+    width:100%;
     border: 1px solid #999;
     padding: 10px;
+    margin-bottom: 1em;
 }
 
 input:focus, textarea:focus {
@@ -36,13 +27,8 @@ textarea {
     height: 5em;
 }
   
-.button {
-    padding-left: 25%; /* same size as the label elements */
-}
-  
 button {
-    margin-left: .3em;
-    padding: 10px;
+    padding: 15px;
     font-weight: bold;
     background: white;
     border: solid 1px rgb(21, 4, 98);
@@ -63,21 +49,7 @@ button:hover {
 }
 
 @media screen and (max-width: 600px) {
-    label {
-        width: 100%;
-        text-align: left;
-    }
-
-    input, textarea {
-        width: 100%;
-    }
-
-    .button {
-        padding: 0;
-    }
-
     button {
-        margin-left: 0;
         width: 100%;
     }
 }
