@@ -45,32 +45,6 @@ input:valid, textarea:valid {
     border-color: green;
 }
 
-input:invalid + span::before, textarea:invalid + span::before {
-    content: '✖';
-    color: red;
-  }
-  
-  input:valid + span::before, textarea:valid + span::before {
-    content: '✓';
-    color: green;
-  }
-
-  input + span, textarea + span {
-    position: relative;
-  }
-
-  input + span::before {
-    position: absolute;
-    right: 10px;
-    top: -3px;
-  }
-
-  textarea + span::before {
-    position: absolute;
-    right: 10px;
-    top: -65px;
-  }
-
 @media screen and (max-width: 768px) {
     form {
         width: 100%;
