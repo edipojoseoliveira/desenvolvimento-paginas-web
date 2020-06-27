@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabelas</h1>
+    <h3>Tabela normal</h3>
+    <table>
+        <tr>
+            <th>Nome</th>
+            <th>Idade</th>
+            <th>Telefone</th>
+        </tr>
+        <tr>
+            <td>João</td>
+            <td>29</td>
+            <td>(46) 9999-9999</td>
+        </tr>
+        <tr>
+            <td>Patrícia</td>
+            <td>45</td>
+            <td>(46) 9999-9999</td>
+        </tr>
+    </table>
+
+    <h3>Tabela com Colspan</h3>
+    <table>
+        <tr>
+            <th>Nome</th>
+            <th>Idade</th>
+            <th colspan="2">Telefone</th>
+        </tr>
+        <tr>
+            <td>João</td>
+            <td>29</td>
+            <td>(46) 9999-9999</td>
+            <td>(46) 8888-8888</td>
+        </tr>
+        <tr>
+            <td>Patrícia</td>
+            <td>45</td>
+            <td>(46) 9999-9999</td>
+            <td>(46) 8888-8888</td>
+        </tr>
+    </table>
+
+    <h3>Tabela com Rowspan</h3>
+    <table>
+        <tr>
+            <th>Sexo</th>
+            <th>Nome</th>
+            <th>Idade</th>
+            <th colspan="2">Telefone</th>
+        </tr>
+        <tr>
+            <td>M</td>
+            <td>João</td>
+            <td>29</td>
+            <td>(46) 9999-9999</td>
+            <td>(46) 8888-8888</td>
+        </tr>
+        <tr>
+            <td rowspan="2">F</td>
+            <td>Patrícia</td>
+            <td>45</td>
+            <td>(46) 9999-9999</td>
+            <td>(46) 8888-8888</td>
+        </tr>
+        <tr>
+            <td>Fernanda</td>
+            <td>25</td>
+            <td>(46) 9999-9999</td>
+            <td>(46) 8888-8888</td>
+        </tr>
+    </table>
+</body>
+</html>
