@@ -1,0 +1,88 @@
+form {
+    width: 50%;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px #999;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 1em;
+    font: 1em sans-serif;
+    border: 1px solid #999;
+}
+
+label {
+    font-weight: bold;
+    padding-bottom: 5px;
+    display: inline-block;
+}
+
+button {
+    background-color: white;
+    border: 1px solid rgb(21, 4, 98);
+    color: rgb(21, 4, 98);
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 3px;
+}
+
+button:hover {
+    background-color: rgb(21, 4, 98);
+    color: white;
+    cursor: pointer;
+}
+
+input:focus, textarea:focus {
+    border-color: rgb(21, 4, 98) !important;
+}
+
+input:invalid, textarea:invalid {
+    border-color: red;
+}
+
+input:valid, textarea:valid {
+    border-color: green;
+}
+
+span {
+    position: relative;
+}
+
+input:invalid + span::before, textarea:invalid + span::before {
+    content: '✖';
+    color: red;
+}
+
+input:valid + span::before, textarea:valid + span::before {
+    content: '✓';
+    color: green;
+}
+
+input + span::before {
+    position: absolute;
+    right: 10px;
+    top: -3px;
+}
+
+textarea + span::before {
+    position: absolute;
+    right: 10px;
+    top: -65px;
+}
+
+textarea {
+    height: 73px;
+}
+
+@media screen and (max-width: 768px) {
+    form {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    button {
+        width: 100%;
+    }
+}
