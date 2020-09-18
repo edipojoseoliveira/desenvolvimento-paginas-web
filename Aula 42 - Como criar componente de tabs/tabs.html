@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabs</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .tab {
+            background-color: #f1f1f1;
+            border: 1px solid #ccc;
+            border-bottom: none;
+            border-radius: 5px 5px 0 0;
+            overflow: auto;
+        }
+
+        .tab button {
+            background-color: #f1f1f1;
+            float: left;
+            border: none;
+            border-radius: 5px 5px 0 0;
+            outline: none;
+            cursor: pointer;
+            padding: 10px 16px;
+            margin: 3px 2px 0 2px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .tab button:hover {
+            background-color: #fbfbfb;
+        }
+
+        .tab button.active {
+            background-color: white;
+            color: rgb(0, 140, 255);
+        }
+
+        .tabcontent {
+            padding: 6px 12px;
+            border: 1px solid #ccc;
+            border-top: none;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="tab">
+        <button id="tabPadrao" class="tablink" onclick="abrirTab(event, 'html')">HTML</button>
+        <button class="tablink" onclick="abrirTab(event, 'css')">CSS</button>
+        <button class="tablink" onclick="abrirTab(event, 'javascript')">JavaScript</button>
+    </div>
+
+    <div id="html" class="tabcontent">
+        <h3>HTML</h3>
+        <p>HTML é uma linguagem de marcação padrão utilizada no mundo inteiro para desenvolver páginas web. A sigla HTML significa Hypertext Markup Language, que traduzindo para português significa “Linguagem de Marcação de Hipertexto”.</p>
+    </div>
+
+    <div id="css" class="tabcontent">
+        <h3>CSS</h3>
+        <p>A sigla CSS significa Cascading Style Sheets, que traduzindo para português significa “folhas de estilo em cascata”. É uma linguagem que complementa a linguagem HTML.</p>
+    </div>
+
+    <div id="javascript" class="tabcontent">
+        <h3>JavaScript</h3>
+        <p>JavaScript é a linguagem de programação do HTML, com ela você pode programar o comportamento das páginas web.</p>
+    </div>
+
+    <script>
+        function abrirTab(evento, idTab) {
+            var i, tabcontents, tablinks;
+            
+            tabcontents = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontents.length; i++) {
+                tabcontents[i].style.display = "none";
+            }
+
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "")
+            }
+
+            document.getElementById(idTab).style.display = "block";
+            evento.currentTarget.className += " active";
+        }
+
+        document.getElementById("tabPadrao").click();
+    </script>
+</body>
+</html>
