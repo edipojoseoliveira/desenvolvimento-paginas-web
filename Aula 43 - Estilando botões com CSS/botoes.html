@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botões</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .btn {
+            border: none;
+            padding: 14px 28px;
+            font-size: 16px;
+            cursor: pointer;
+            color: white;
+        }
+
+        .success {
+            background-color: #4CAF50;
+        }
+
+        .success:hover {
+            background-color: #46a049;
+        }
+
+        .info {
+            background-color: #2196F3;
+        }
+
+        .info:hover {
+            background-color: #0b7dda;
+        }
+
+        .warning {
+            background-color: #ff9800;
+        }
+
+        .warning:hover {
+            background-color: #e68a00;
+        }
+
+        .danger {
+            background-color: #f44336;
+        }
+
+        .danger:hover {
+            background-color: #da190b;
+        }
+
+        .default {
+            background-color: #e7e7e7;
+            color: black;
+        }
+
+        .default:hover {
+            background-color: #ddd;
+        }
+
+        .btn-outline {
+            border: 2px solid black;
+            background-color: white;
+            color: black;
+            padding: 12px 26px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .btn-radius {
+            border-radius: 5px;
+        }
+
+        .success-outline {
+            border-color: #4CAF50;
+            color: green;
+        }
+
+        .success-outline:hover {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .info-outline {
+            border-color: #2196F3;
+            color: dodgerblue;
+        }
+
+        .info-outline:hover {
+            background-color: #2196F3;
+            color: white;
+        }
+
+        .warning-outline {
+            border-color: #ff9800;
+            color: orange;
+        }
+
+        .warning-outline:hover {
+            background-color: #ff9800;
+            color: white;
+        }
+
+        .danger-outline {
+            border-color: #f44336;
+            color: red;
+        }
+
+        .danger-outline:hover {
+            background-color: #f44336;
+            color: white;
+        }
+
+        .default-outline {
+            border-color: #e7e7e7;
+            color: black;
+        }
+
+        .default-outline:hover {
+            background-color: #e7e7e7;
+        }
+
+        div {
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <button class="btn success">Success</button>
+        <button class="btn info">Info</button>
+        <button class="btn warning">Warning</button>
+        <button class="btn danger">Danger</button>
+        <button class="btn default">Default</button>
+    </div>
+    
+    <div>
+        <button class="btn btn-radius success">Success</button>
+        <button class="btn btn-radius info">Info</button>
+        <button class="btn btn-radius warning">Warning</button>
+        <button class="btn btn-radius danger">Danger</button>
+        <button class="btn btn-radius default">Default</button>
+    </div>
+
+    <div>
+        <button class="btn-outline success-outline">Success</button>
+        <button class="btn-outline info-outline">Info</button>
+        <button class="btn-outline warning-outline">Warning</button>
+        <button class="btn-outline danger-outline">Danger</button>
+        <button class="btn-outline default-outline">Default</button>
+    </div>
+
+    <div>
+        <button class="btn-outline btn-radius success-outline">Success</button>
+        <button class="btn-outline btn-radius info-outline">Info</button>
+        <button class="btn-outline btn-radius warning-outline">Warning</button>
+        <button class="btn-outline btn-radius danger-outline">Danger</button>
+        <button class="btn-outline btn-radius default-outline">Default</button>
+    </div>
+</body>
+</html>
