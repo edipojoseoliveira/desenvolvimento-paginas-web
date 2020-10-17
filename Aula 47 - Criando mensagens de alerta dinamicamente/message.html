@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mensagens</title>
+
+    <link rel="stylesheet" href="./message.css">
+    <link rel="stylesheet" href="./grid-view.css">
+    <link rel="stylesheet" href="./botao.css">
+    <script src="./message.js"></script>
+</head>
+<body>
+    <div class="row">
+        <div class="col-12 col-s-12">
+            <div id="mensagens"></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-3 col-s-3">
+            <button class="btn btn-verde" onclick="abrirMensagem('Essa é a mensagem verde', 'alert-success')">
+                Mensagem Verde
+            </button>
+        </div>
+        <div class="col-3 col-s-3">
+            <button class="btn btn-azul" onclick="abrirMensagem('Essa é a mensagem azul', 'alert-info')">
+                Mensagem Azul
+            </button>
+        </div>
+        <div class="col-3 col-s-3">
+            <button class="btn btn-laranja" onclick="abrirMensagem('Essa é a mensagem amarela', 'alert-warning')">
+                Mensagem Amarela
+            </button>
+        </div>
+        <div class="col-3 col-s-3">
+            <button class="btn btn-vermelho" onclick="abrirMensagem('Essa é a mensagem vermelha', 'alert-danger')">
+                Mensagem Vermelha
+            </button>
+        </div>
+    </div>
+</body>
+</html>

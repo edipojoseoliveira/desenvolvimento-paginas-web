@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mensagens</title>
+
+    <link rel="stylesheet" href="./message.css">
+    <link rel="stylesheet" href="./grid-view.css">
+    <script src="./message.js"></script>
+</head>
+<body>
+    <div class="row">
+        <div class="col-12 col-s-12">
+            <div class="alert alert-danger">
+                Indica que alguma ação deu errado.
+                <span class="closebtn" onclick="closeMessage(event)">&times;</span>
+            </div>
+            <div class="alert alert-success">
+                Indica que alguma ação foi bem-sucedida.
+                <span class="closebtn" onclick="closeMessage(event)">&times;</span>
+            </div>
+            <div class="alert alert-info">
+                Indica uma informação neutra.
+                <span class="closebtn" onclick="closeMessage(event)">&times;</span>
+            </div>
+            <div class="alert alert-warning">
+                Indica um aviso que precisa de atenção.
+                <span class="closebtn" onclick="closeMessage(event)">&times;</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

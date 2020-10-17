@@ -1,0 +1,104 @@
+fieldset {
+    border: 1px solid #d1d1d1;
+    background-color: #fff;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+legend {
+    padding: 5px;
+    font-weight: bold;
+    color: #525252;
+}
+
+.rotulo {
+    color: #525252;
+    font-size: 14px;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.caixa-texto {
+    color: #525252;
+    font-size: 14px;
+    border-radius: 3px;
+    padding: 6px 9px;
+    border:  1px solid #d1d1d1;
+    background-color: #fafafa;
+    font-weight: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    outline: none;
+}
+
+.caixa-texto:focus {
+    border: 1px solid #00aeef;
+    box-shadow: 0 0 4px 0 rgba(11, 195, 241, 0.7);
+}
+
+.caixa-texto:hover {
+    border: 1px solid #00aeef;
+}
+
+input[type*="text"], input[type*="mail"], input[type*="phone"], input[type*="password"], input[type*="range"], input[type*="date"], input[type*="time"], input[type*="datetime-local"], input[type*="number"], textarea, select {
+    width: 100%;
+}
+
+/* checkbox */
+.check {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 12px;
+    color: #525252;
+    font-size: 14px;
+}
+
+.check input {
+    position: absolute;
+    opacity: 0;
+    height: 0;
+    width: 0;
+}
+
+.marcador {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 16px;
+    width: 16px;
+    cursor: pointer;
+    background-color: #fafafa;
+    border:  1px solid #d1d1d1;
+    border-radius: 3px;
+}
+
+.check:hover .marcador {
+    background-color: #fff;
+}
+
+.check input:checked ~ .marcador {
+    background-color: #2196F3;
+    border: 1px solid #00aeef;
+}
+
+.marcador:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.check input:checked ~ .marcador:after {
+    display: block;
+}
+
+.check .marcador:after {
+    left: 4.9px;
+    top: 1px;
+    width: 4px;
+    height: 8px;
+    border: 1px solid white;
+    border-width: 0 1px 1px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}

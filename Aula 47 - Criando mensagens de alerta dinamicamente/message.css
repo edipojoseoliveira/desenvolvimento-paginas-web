@@ -1,0 +1,27 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.alert {
+    color: white;
+    padding: 20px;
+    margin-bottom: 5px;
+}
+
+.alert.alert-danger {background-color: #f44336;}
+.alert.alert-success {background-color: #4CAF50;}
+.alert.alert-info {background-color: #2196F3;}
+.alert.alert-warning {background-color: #ff9800;}
+
+.closebtn {
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.closebtn:hover {
+    color: black;
+}
