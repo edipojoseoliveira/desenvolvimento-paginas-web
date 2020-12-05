@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <title>Edi Cursos</title>
+        <meta charset="utf-8">
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel="stylesheet" href="../css/style.css" type="text/css">
+        
+        <link rel="apple-touch-icon" sizes="180x180" href="../icone/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../icone/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../icone/favicon-16x16.png">
+        <link rel="manifest" href="../icone/site.webmanifest">
+        <link rel="mask-icon" href="../icone/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+    </head>
+    <body>
+        <header>
+            <h1>Desenvolvimento Web</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../sobre.html">Sobre</a></li>
+                <li><a href="../contato.html">Contato</a></li>
+                <li><a href="https://www.youtube.com/channel/UC4loFPi-jXiUTAiTp8JqQMg" target="_blank">Canal do YouTube</a></li>
+            </ul>
+        </nav>
+        <div class="row">
+            <section id="postagem">
+                <article class="card">
+                    <h2>Estrutura básica de uma página HTML</h2>
+                    <p>Na aula de hoje vamos aprender sobre a estrutura básica de um documento HTML, veremos que existem elementos fixos que devem ser usados em nossas páginas web.</p>
+
+                    <h3 id="titulo01">Introdução</h3>
+                    <p>Você já teve que desenvolver uma dissertação? Se sim, você deve lembrar que ela precisa ter uma introdução, um desenvolvimento e uma conclusão para estar completa.</p>
+                    <p>Um documento HTML também tem elementos fixos que são definidos como padrão de desenvolvimento de qualquer página web. Nessa aula, veremos quais são esses elementos e quais suas características. </p>
+
+                    <h3 id="titulo02">Tags do HTML</h3>
+                    <p>Primeiro vamos entender o que são as tags do HTML, pois no desenvolvimento desses documentos ambas são utilizadas em todo momento. </p>
+                    <p>Tags são os nomes dados aos elementos do nosso site. Para formar uma tag nós escrevemos o nome da tag entre os símbolos &lt; e &gt;, como no exemplo abaixo. </p>
+                    <p>As tags normalmente são usadas em pares, como no exemplo mostrado temos &lt;nomeDaTag&gt; e &lt;/nomeDaTag&gt;, a primeira tag é a tag de abertura e a segunda é a tag de fechamento. Note que a diferença entre as duas é que a tag de fechamento tem uma barra inserida antes do nome da tag.</p>
+                    <p>Para cada elemento de uma página web usamos uma tag. Imagine que você vai escrever um parágrafo no seu site; para criar o parágrafo usamos a tag &lt;p&gt;. Veja a seguir o exemplo de um parágrafo em HTML. </p>
+                    <p>O que você percebe? Todo o texto do parágrafo deve ficar entre as tags &lt;p&gt; e &lt;/p&gt;, que são respectivamente a tag de abertura e fechamento de um parágrafo.</p>
+                    <p>Agora que você já sabe o que é uma tag no HTML vamos ver as tags usadas para criar a estrutura básica de uma página web. </p>
+                    
+                    <h3 id="titulo03">Abertura e fechamento do documento</h3>
+                    <p>Todo o conteúdo de um documento HTML deve estar dentro da tag chamada html. Veja abaixo um modelo de uso da tag html. </p>
+                    <p>Perceba que todo o conteúdo da página vai ficar entre a abertura e fechamento da tag html, para abrir a tag escrevemos &lt;html&gt; e para fechá-la usamos o código &lt;/html&gt;.</p>
+                    <p>Dentro das tags html nós ainda temos dois elementos importantes que são a cabeça e o corpo do documento que veremos a seguir. </p>
+
+                    <h3 id="titulo04">Cabeça do documento tag Head</h3>
+                    <p>Na tag head que representa a cabeça do documento nós colocamos informações e algumas configurações sobre o documento que estamos desenvolvendo. </p>
+                    <p>Nessa área podemos colocar o título do site que é exibido na guia do navegador, além de colocarmos informações sobre a formatação dos caracteres, configurações sobre como o documento vai se comportar em cada navegador, entre outras informações que veremos mais detalhadamente na aula prática (vídeo).</p>
+                    <p>Dentro do head do documento também configuramos os arquivos de CSS e JavaScript que nossa página vai usar. Por enquanto estamos estudando apenas HTML, mas futuramente vamos começar a usar CSS e JavaScript. </p>
+                    <p>Veja abaixo um protótipo de código HTML implementando a tag head. </p>
+                    <p>Note que a tag head tem sua abertura &lt;head&gt; e seu fechamento &lt;/head&gt;, além de ser escrita dentro da tag html.</p>
+                    <p>É importante saber que o conteúdo escrito dentro da tag head não é exibido no site, apenas o conteúdo escrito no corpo do documento será exibido como veremos em seguida.</p>
+
+                    <h3 id="titulo05">Corpo do documento tag Body</h3>
+                    <p>A tag body representa o corpo do documento, nela nós colocamos todo o conteúdo que será exibido em nosso site. </p>
+                    <p>Dentro da tag body colocamos todos os textos, imagens, vídeos e áudios de nossas páginas web, tudo que será exibido no site devemos colocar dentro dessa tag. </p>
+                    <p>A tag body é aberta com o código &lt;body&gt; e fechada com o código &lt;/body&gt;. Perceba que essa tag deve iniciar logo após o fechamento da tag head, e ela também deve ficar dentro da tag html que é a principal.</p>
+
+                    <h3 id="titulo06">Tag DOCTYPE</h3>
+                    <p>Ao criar nosso documento HTML precisamos indicar que ele é um documento HTML da versão 5 para quê os navegadores possam interpretá-lo de forma correta. Para isso usamos a tag especial doctype. </p>
+                    <p>Esse tag deve ser escrita no início do documento HTML, acima da abertura da tag html. Veja abaixo como escrevê-la. </p>
+                    <p>Como ela é uma tag especial não tem fechamento, sua única função é indicar ao navegador que a página deve ser interpretada como um documento HTML 5.</p>
+
+                    <h3 id="titulo07">Conclusão</h3>
+                    <p>Nessa aula aprendemos sobre a estrutura básica de um documento HTML, vimos que ela é formada por três tags essências que são html, head e body.</p>
+                    <p>Na tag &lt;html&gt; colocamos todos os elementos de nosso site, na tag &lt;head&gt; colocamos informações e configurações sobre o documento e na tag &lt;body&gt; colocamos todo o conteúdo que será exibido em nosso site como imagens, textos e vídeos.</p>
+                    <p>Também vimos que as tags são muito importantes no desenvolvimento de documentos HTML, pois é através delas que nós conseguimos indicar quais elementos nosso site vai ter, além de serem usadas para montar toda a estrutura de nossas páginas web.</p>
+                    <p>Caso você tenha ficado com dúvidas ou tenha alguma sugestão mande sua pergunta ou envie uma mensagem para nós, responderemos o mais rápido possível.</p>
+                    <p>Na próxima aula vamos desenvolver nossa primeira página web colocando em prática o conteúdo estudado hoje além de conhecer novas tags do html. </p>
+                </article>
+            </section>
+            <aside>
+                <article class="card">
+                    <h3>Tópicos</h3>
+                    <ul id="lista-topicos">
+                        <li>
+                            <a href="#titulo01">&#10148; Introdução</a>
+                        </li>
+                        <li>
+                            <a href="#titulo02">&#10148; Tags do HTML</a>
+                        </li>
+                        <li>
+                            <a href="#titulo03">&#10148; Abertura e fechamento do documento</a>
+                        </li>
+                        <li>
+                            <a href="#titulo04">&#10148; Cabeça do documento tag Head</a>
+                        </li>
+                        <li>
+                            <a href="#titulo05">&#10148; Corpo do documento tag Body</a>
+                        </li>
+                        <li>
+                            <a href="#titulo06">&#10148; Tag DOCTYPE</a>
+                        </li>
+                        <li>
+                            <a href="#titulo07">&#10148; Conclusão</a>
+                        </li>
+                    </ul>
+                </article>
+            </aside>
+
+            <a id="link-topo" href="#">&#9650;</a>
+        </div>
+        <footer>
+            <dl>
+                <dt>E-mail</dt>
+                <dd>email@mail.com</dd>
+                <br/>
+                <dt>Telefone</dt>
+                <dd>(46) 9 9999-9999</dd>
+            </dl>
+
+            <p>EdiCursos</p>
+        </footer>
+    </body>
+</html>
