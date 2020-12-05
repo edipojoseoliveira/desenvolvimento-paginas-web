@@ -46,6 +46,173 @@
                 </fieldset>
             </div>
         </div>
+        <div class="row">
+            <div class="col-6 col-s-12">
+                <fieldset>
+                    <legend>CheckBox</legend>
+
+                    <div class="row">
+                        <div class="col-4 col-s-12">
+                            <label for="checkCarro" class="label-check">
+                                Carro
+                                <input type="checkbox" id="checkCarro" name="veiculo1" value="Carro">
+                                <span class="caixa-check"></span>
+                            </label>
+                        </div>
+                        <div class="col-4 col-s-12">
+                            <label for="checkMoto" class="label-check">
+                                Moto
+                                <input type="checkbox" id="checkMoto" name="veiculo2" value="Moto">
+                                <span class="caixa-check"></span>
+                            </label>
+                        </div>
+                        <div class="col-4 col-s-12">
+                            <label for="checkBicicleta" class="label-check">
+                                Bicicleta
+                                <input type="checkbox" id="checkBicicleta" name="veiculo3" value="Bicicleta">
+                                <span class="caixa-check"></span>
+                            </label>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+            <div class="col-6 col-s-12">
+                <fieldset>
+                    <legend>Senha</legend>
+
+                    <div class="row">
+                        <div class="col-4 cols-s-12">
+                            <label for="txtSenha" class="rotulo">Senha:</label>
+                            <input type="password" id="txtSenha" name="senha" minlength="6" maxlength="10" placeholder="Digite sua senha" class="caixa-texto" required>
+                        </div>
+                        <div class="col-4 col-s-12">
+                            <div class="caixa-vazia-25" style="margin-bottom: 3px;"></div>
+                            <label for="checkMostrarSenha" class="label-check">
+                                Mostrar senha
+                                <input type="checkbox" id="checkMostrarSenha" onchange="mostrarSenha()">
+                                <span class="caixa-check"></span>
+                            </label>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6 col-s-12">
+                <fieldset>
+                    <legend>Radio button</legend>
+
+                    <div class="row">
+                        <div class="col-4 col-s-12">
+                            <label for="radioCarro" class="label-radio">
+                                Carro
+                                <input type="radio" id="radioCarro" name="veiculo" value="Carro">
+                                <span class="bol-radio"></span>
+                            </label>
+                        </div>
+                        <div class="col-4 col-s-12">
+                            <label for="radioMoto" class="label-radio">
+                                Moto
+                                <input type="radio" id="radioMoto" name="veiculo" value="Moto">
+                                <span class="bol-radio"></span>
+                            </label>
+                        </div>
+                        <div class="col-4 col-s-12">
+                            <label for="radioBicicleta" class="label-radio">
+                                Bicicleta
+                                <input type="radio" id="radioBicicleta" name="veiculo" value="Bicicleta">
+                                <span class="bol-radio"></span>
+                            </label>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+            <div class="col-6 col-s-12">
+                <fieldset>
+                    <legend>Data e hora</legend>
+
+                    <div class="row">
+                        <div class="col-4 col-s-12">
+                            <label for="txtData" class="rotulo">Data:</label>
+                            <input type="date" id="txtData" name="data" class="caixa-texto" max="2020-11-05">
+                        </div>
+                        <div class="col-4 col-s-12">
+                            <label for="txtHorario" class="rotulo">Horário:</label>
+                            <input type="time" id="txtHorario" name="horario" class="caixa-texto" required>
+                        </div>
+                        <div class="col-4 col-s-12">
+                            <label for="txtDataHora" class="rotulo">Data e hora:</label>
+                            <input type="datetime-local" id="txtDataHora" name="dataHora" class="caixa-texto">
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6 col-s-12">
+                <fieldset>
+                    <legend>Números</legend>
+
+                    <div class="row">
+                        <div class="col-4 col-s-6">
+                            <label for="txtIdade" class="rotulo">Idade:</label>
+                            <input type="number" id="txtIdade" name="idade" class="caixa-texto" placeholder="Idade">
+                        </div>
+                        <div class="col-4 col-s-6">
+                            <label for="txtVolume" class="rotulo">
+                                Volume:
+                                <output id="outVolume"></output>
+                            </label>
+                            <input type="range" id="txtVolume" name="volume" min="0" max="10"
+                                oninput="outVolume.value = txtVolume.value" class="range">
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+            <div class="col-6 col-s-12">
+                <fieldset>
+                    <legend>Select e DataList</legend>
+
+                    <div class="row">
+                        <div class="col-4 col-s-12">
+                            <label for="selectBasico" class="rotulo">Select Básico:</label>
+                            <select name="basico" id="selectBasico" class="caixa-texto">
+                                <option value="1">Opção 1</option>
+                                <option value="2">Opção 2</option>
+                                <option value="3">Opção 3</option>
+                                <option value="4">Opção 4</option>
+                                <option value="5">Opção 5</option>
+                            </select>
+                        </div>
+                        <div class="col-4 col-s-12">
+                            <label for="selectAgrupado" class="rotulo">Select Agrupado:</label>
+                            <select name="agrupado" id="selectAgrupado" class="caixa-texto">
+                                <optgroup label="Grupo 01">
+                                    <option value="1">Opção 1</option>
+                                    <option value="2">Opção 2</option>
+                                    <option value="3">Opção 3</option>
+                                </optgroup>
+                                <optgroup label="Grupo 02">
+                                    <option value="4">Opção 4</option>
+                                    <option value="5">Opção 5</option>
+                                </optgroup>                                
+                            </select>
+                        </div>
+                        <div class="col-4 col-s-12">
+                            <label for="txtLista" class="rotulo">DataList:</label>
+                            <input type="text" list="dataList" id="txtLista" name="lista" class="caixa-texto" placeholder="Lista">
+                            <datalist id="dataList">
+                                <option value="Opção 1"></option>
+                                <option value="Opção 2"></option>
+                                <option value="Opção 3"></option>
+                                <option value="Opção 4"></option>
+                                <option value="Opção 5"></option>
+                            </datalist>                            
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+        </div>
     </form>
 </body>
 </html>

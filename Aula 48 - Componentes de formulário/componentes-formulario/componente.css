@@ -39,3 +39,143 @@ legend {
     border: 1px solid #00aeef;
     box-shadow: 0 0 4px rgba(11, 195, 241, 0.7);
 }
+
+/* CheckBox */
+.label-check input {
+    display: none;
+}
+
+.label-check .caixa-check {
+    height: 16px;
+    width: 16px;
+    border: 1px solid #d1d1d1;
+    background-color: #fafafa;
+    border-radius: 3px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.label-check {
+    position: relative;
+    padding-left: 25px;
+    cursor: pointer;
+    color: #525252;
+    font-size: 14px;
+    user-select: none;
+}
+
+.label-check:hover .caixa-check {
+    background-color: #fff;
+}
+
+.label-check input:checked ~ .caixa-check {
+    background-color: #2196F3;
+    border: 1px solid #00aeef;
+}
+
+.label-check .caixa-check::after {
+    content: "";
+    width: 4px;
+    height: 8px;
+    border: 1px solid white;
+    position: absolute;
+    left: 4.9px;
+    top: 1px;
+    border-width: 0 1px 1px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    display: none;
+}
+
+.label-check input:checked ~ .caixa-check::after {
+    display: block;
+}
+
+.caixa-vazia-25 {
+    height: 25px;
+}
+
+.label-radio {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    color: #525252;
+    font-size: 14px;
+    user-select: none;
+    padding-left: 25px;
+}
+
+.label-radio input {
+    display: none;
+}
+
+.label-radio .bol-radio {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 16px;
+    width: 16px;
+    border: solid 1px #d1d1d1;
+    background-color: #FAFAFA;
+    border-radius: 50%;
+}
+
+.label-radio input:checked ~ .bol-radio {
+    border: solid 1px #0893c7;
+    background-color: #00aeef;
+}
+
+.label-radio:hover .bol-radio {
+    border: solid 1px #0893c7;
+}
+
+.label-radio .bol-radio::after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: white;
+    display: none;
+}
+
+.label-radio input:checked ~ .bol-radio::after {
+    display: block;
+}
+
+.range {
+    background-color: #fafafa;
+    border: solid 1px #d1d1d1;
+    -webkit-appearance: none;
+    width: 100%;
+    height: 12.5px;
+    border-radius: 5px;
+    outline: none;
+    margin-top: 8px;
+}
+
+.range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: solid 1px #0893c7;
+    background-color: #00aeef;
+    cursor: move;
+    box-shadow: 1px 1px 0 0 rgba(35, 31, 32, 0.2);
+}
+
+.range::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: solid 1px #0893c7;
+    background-color: #00aeef;
+    cursor: move;
+    box-shadow: 1px 1px 0 0 rgba(35, 31, 32, 0.2);
+}
