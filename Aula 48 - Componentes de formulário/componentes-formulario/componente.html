@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Componentes</title>
+
+    <link rel="stylesheet" href="./componente.css">
+    <link rel="stylesheet" href="./grid.css">
+
+    <script src="./componente.js"></script>
+</head>
+<body>
+    <form action="#">
+        <div class="row">
+            <div class="col-6 col-s-12">
+                <fieldset>
+                    <legend>Caixas de texto</legend>
+
+                    <div class="row">
+                        <div class="col-4">
+                            <label for="txtNome" class="rotulo">Nome:</label>
+                            <input type="text" id="txtNome" name="nome" placeholder="Informe seu nome" maxlength="50" required autofocus class="caixa-texto">
+                        </div>
+                        <div class="col-4">
+                            <label for="txtEmail" class="rotulo">E-mail:</label>
+                            <input type="mail" id="txtEmail" name="email" placeholder="Informe seu e-mail" maxlength="100" required class="caixa-texto" readonly>
+                        </div>
+                        <div class="col-4">
+                            <label for="txtCelular" class="rotulo">Celular:</label>
+                            <input type="tel" id="txtCelular" name="celular" placeholder="Informe seu número" maxlength="15" required class="caixa-texto" disabled>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+            <div class="col-6 col-s-12">
+                <fieldset>
+                    <legend>TextArea</legend>
+
+                    <div class="row">
+                        <div class="col-12 col-s-12">
+                            <label for="txtDescricao" class="rotulo">Descrição:</label>
+                            <textarea name="descricao" id="txtDescricao" rows="3" placeholder="Descrição" class="caixa-texto"></textarea>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

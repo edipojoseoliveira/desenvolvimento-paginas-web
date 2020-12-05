@@ -1,0 +1,41 @@
+fieldset {
+    border: 1px solid #d1d1d1;
+    background-color: #fff;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+legend {
+    padding: 5px;
+    font-weight: bold;
+    color: #525252;
+}
+
+.rotulo {
+    color: #525252;
+    font-size: 14px;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.caixa-texto {
+    color: #525252;
+    font-size: 14px;
+    border-radius: 3px;
+    padding: 6px 9px;
+    border: 1px solid #d1d1d1;
+    background-color: #fafafa;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    outline: none;
+    resize: none;
+}
+
+.caixa-texto:hover {
+    border: 1px solid #00aeef;
+}
+
+.caixa-texto:focus {
+    border: 1px solid #00aeef;
+    box-shadow: 0 0 4px rgba(11, 195, 241, 0.7);
+}
