@@ -28,13 +28,10 @@
             </ul>
         </nav>
         <div class="row">
-            <form action="https://api.staticforms.xyz/submit" method="POST" class="card">
-                <input type="hidden" name="accessKey" value="f019135b-85f9-445f-b86f-755da68abd64">
-                <input type="hidden" name="redirectTo" value="https://www.edicursos.com.br/contato.html">
-
+            <form action="./php/enviar-email.php" method="POST" class="card">
                 <div>
                     <label for="inputNome">Primeiro Nome:</label>
-                    <input type="text" id="inputNome" name="name" required maxlength="25" minlength="2">
+                    <input type="text" id="inputNome" name="nome" required maxlength="25" minlength="2">
                     <span></span>
                 </div>
 
@@ -46,7 +43,7 @@
 
                 <div>
                     <label for="textAreaMensagem">Mensagem:</label>
-                    <textarea name="message" id="textAreaMensagem" required maxlength="100"></textarea>
+                    <textarea name="mensagem" id="textAreaMensagem" required maxlength="100"></textarea>
                     <span></span>
                 </div>
 
